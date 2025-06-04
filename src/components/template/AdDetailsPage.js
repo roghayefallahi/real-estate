@@ -6,8 +6,8 @@ import { icons } from "@/constants/icons";
 import { categories } from "@/constants/strings";
 import { BiCalendarCheck } from "react-icons/bi";
 import { e2p, sp } from "@/utils/replaceNumber";
-import styles from "@/template/AdDetailsPage.module.css";
 import ShareBtn from "@/module/ShareBtn";
+import styles from "@/template/AdDetailsPage.module.css";
 
 function AdDetailsPage({ data }) {
   return (
@@ -34,7 +34,6 @@ function AdDetailsPage({ data }) {
             {e2p(data.phone)}
           </span>
         </div>
-        <ShareBtn />
         <div className={styles.price}>
           <p>
             {icons[data.category]}
@@ -46,6 +45,7 @@ function AdDetailsPage({ data }) {
             {new Date(data.constructionDate).toLocaleDateString("fa-IR")}
           </p>
         </div>
+        <ShareBtn />
       </div>
     </div>
   );

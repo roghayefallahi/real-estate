@@ -131,3 +131,29 @@
   margin-left: 5px;
   color: #304ffe;
 }
+
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 0;
+  }
+  .realState{
+    flex: 1;
+  }
+  .price{
+    flex: 1;
+      padding: 20px 10px  !important;
+  }
+
+
+}

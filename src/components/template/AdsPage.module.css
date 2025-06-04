@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
+  flex-wrap: nowrap;
 }
 
 .sidebar {
@@ -31,4 +32,20 @@
   border-radius: 10px;
   height: 50px;
   width: 100%;
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    gap: 10px;
+  }
+
 }

@@ -1,7 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
+
 .container p {
   display: flex;
   font-size: 1.2rem;
@@ -18,4 +20,31 @@
   color: grey;
   margin: 5px;
   padding-right: 15px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .container a {
+    color: grey;
+    margin: 2px;
+    padding-right: 8px;
+  }
+
+  .container p {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .container p svg {
+    margin-left: 3px;
+    font-size: 1rem;
+    color: #304ffe !important;
+  }
+
 }
