@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding: 30px 15px;
+  border-radius: 10px;
+  box-shadow: #304ffe4a 0px 4px 15px;
+  margin-left: 40px;
+  width: 220px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.sidebar svg {
+  font-size: 3rem;
+  color: #304ffe;
+}
+
+.sidebar p {
+  color: grey;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.sidebar span {
+  width: 100%;
+  height: 1px;
+  background-color: silver;
+  margin: 20px 0;
+}
+
+.sidebar a {
+  margin: 5px 0;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: background 0.2s;
+}
+.sidebar button{
+  text-align: center;
+}
+
+.sidebar a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+}
+
+/* Medium screens - Tablet */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    gap: 10px;
+  }
+
+  .sidebar svg {
+    font-size: 2.5rem;
+  }
+
+  .sidebar p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .sidebar a {
+    flex: 1 1 45%;
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+}
+
+/* Small screens - Mobile */
+/* @media (max-width: 576px) {
+  .sidebar {
+    padding: 15px 10px;
+    gap: 5px;
+  }
+
+  .sidebar svg {
+    font-size: 2rem;
+  }
+
+  .sidebar p {
+    font-size: 0.9rem;
+  }
+
+  .sidebar a {
+    font-size: 0.75rem;
+    padding: 5px;
+    flex: 1 1 100%;
+  }
+} */
