@@ -15,7 +15,7 @@ function AdminCard({ data: { _id, title, description, location, price } }) {
   };
   const publishHandler = async () => {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/api/ad/${_id}`,
+      `/api/ad/${_id}`,
       {
         method: "PATCH",
       }
